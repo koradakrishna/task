@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Find Big Number</h3>
+    <br><br>
+    <label for="fnumber">Enter First Number</label>
+    <input type="text" name="fnumber" value="fnumber" id="one"><br>
+    <label for="snumber">Enter Second Number</label>
+    <input type="text" name="snumber" value="snumber" id="second"><br>
+    <input type="submit" name="submit" value="submit" onClick="bigNum()">
+  </body>
+
+  <script>
+
+
+
+    function bigNum() {
+
+      var fn, sn;
+
+      fn = document.getElementById("one").value;
+      sn = document.getElementById("second").value;
+
+      if (fn > sn)
+       window.alert(" Big Number Is : " +fn);
+      else {
+
+        window.alert(" Big Number Is : " + sn);
+      }
+    }
+  </script>
+</html>
